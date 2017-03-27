@@ -1,0 +1,208 @@
+Array
+(
+    [0] => frontend\models\User Object
+        (
+            [_attributes:yii\db\BaseActiveRecord:private] => Array
+                (
+                    [id] => 1
+                    [parent_id] => 
+                    [gender] => 0
+                    [username] => admin
+                    [fullname] => Tổ tiên
+                    [description] => 
+                    [ancestor_id] => 0
+                )
+
+            [_oldAttributes:yii\db\BaseActiveRecord:private] => Array
+                (
+                    [id] => 1
+                    [parent_id] => 
+                    [gender] => 0
+                    [username] => admin
+                    [fullname] => Tổ tiên
+                    [description] => 
+                    [ancestor_id] => 0
+                )
+
+            [_related:yii\db\BaseActiveRecord:private] => Array
+                (
+                )
+
+            [_errors:yii\base\Model:private] => 
+            [_validators:yii\base\Model:private] => 
+            [_scenario:yii\base\Model:private] => default
+            [_events:yii\base\Component:private] => Array
+                (
+                )
+
+            [_behaviors:yii\base\Component:private] => Array
+                (
+                )
+
+        )
+
+    [1] => frontend\models\User Object
+        (
+            [_attributes:yii\db\BaseActiveRecord:private] => Array
+                (
+                    [id] => 2
+                    [parent_id] => 1
+                    [gender] => 1
+                    [username] => admin1
+                    [fullname] => To tien1
+                    [description] =>  
+                    [ancestor_id] => 1
+                )
+
+            [_oldAttributes:yii\db\BaseActiveRecord:private] => Array
+                (
+                    [id] => 2
+                    [parent_id] => 1
+                    [gender] => 1
+                    [username] => admin1
+                    [fullname] => To tien1
+                    [description] =>  
+                    [ancestor_id] => 1
+                )
+
+            [_related:yii\db\BaseActiveRecord:private] => Array
+                (
+                )
+
+            [_errors:yii\base\Model:private] => 
+            [_validators:yii\base\Model:private] => 
+            [_scenario:yii\base\Model:private] => default
+            [_events:yii\base\Component:private] => Array
+                (
+                )
+
+            [_behaviors:yii\base\Component:private] => Array
+                (
+                )
+
+        )
+
+    [2] => frontend\models\User Object
+        (
+            [_attributes:yii\db\BaseActiveRecord:private] => Array
+                (
+                    [id] => 5
+                    [parent_id] => 2
+                    [gender] => 1
+                    [username] => admin4
+                    [fullname] => To tien4
+                    [description] =>  
+                    [ancestor_id] => 2
+                )
+
+            [_oldAttributes:yii\db\BaseActiveRecord:private] => Array
+                (
+                    [id] => 5
+                    [parent_id] => 2
+                    [gender] => 1
+                    [username] => admin4
+                    [fullname] => To tien4
+                    [description] =>  
+                    [ancestor_id] => 2
+                )
+
+            [_related:yii\db\BaseActiveRecord:private] => Array
+                (
+                )
+
+            [_errors:yii\base\Model:private] => 
+            [_validators:yii\base\Model:private] => 
+            [_scenario:yii\base\Model:private] => default
+            [_events:yii\base\Component:private] => Array
+                (
+                )
+
+            [_behaviors:yii\base\Component:private] => Array
+                (
+                )
+
+        )
+
+    [3] => frontend\models\User Object
+        (
+            [_attributes:yii\db\BaseActiveRecord:private] => Array
+                (
+                    [id] => 14
+                    [parent_id] => 21
+                    [gender] => 1
+                    [username] => HuuHaido1
+                    [fullname] => Đỗ Hữu Hải
+                    [description] => Đang đi lam
+                    [ancestor_id] => 4
+                )
+
+            [_oldAttributes:yii\db\BaseActiveRecord:private] => Array
+                (
+                    [id] => 14
+                    [parent_id] => 21
+                    [gender] => 1
+                    [username] => HuuHaido1
+                    [fullname] => Đỗ Hữu Hải
+                    [description] => Đang đi lam
+                    [ancestor_id] => 4
+                )
+
+            [_related:yii\db\BaseActiveRecord:private] => Array
+                (
+                )
+
+            [_errors:yii\base\Model:private] => 
+            [_validators:yii\base\Model:private] => 
+            [_scenario:yii\base\Model:private] => default
+            [_events:yii\base\Component:private] => Array
+                (
+                )
+
+            [_behaviors:yii\base\Component:private] => Array
+                (
+                )
+
+        )
+
+    [4] => frontend\models\User Object
+        (
+            [_attributes:yii\db\BaseActiveRecord:private] => Array
+                (
+                    [id] => 21
+                    [parent_id] => 5
+                    [gender] => 
+                    [username] => DoNgoc
+                    [fullname] => Do Ba Ngoc
+                    [description] => images/bangoc.jpg
+                    [ancestor_id] => 3
+                )
+
+            [_oldAttributes:yii\db\BaseActiveRecord:private] => Array
+                (
+                    [id] => 21
+                    [parent_id] => 5
+                    [gender] => 
+                    [username] => DoNgoc
+                    [fullname] => Do Ba Ngoc
+                    [description] => images/bangoc.jpg
+                    [ancestor_id] => 3
+                )
+
+            [_related:yii\db\BaseActiveRecord:private] => Array
+                (
+                )
+
+            [_errors:yii\base\Model:private] => 
+            [_validators:yii\base\Model:private] => 
+            [_scenario:yii\base\Model:private] => default
+            [_events:yii\base\Component:private] => Array
+                (
+                )
+
+            [_behaviors:yii\base\Component:private] => Array
+                (
+                )
+
+        )
+
+)

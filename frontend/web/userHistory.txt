@@ -1,0 +1,167 @@
+Array
+(
+    [0] => frontend\models\UserHistory Object
+        (
+            [_attributes:yii\db\BaseActiveRecord:private] => Array
+                (
+                    [id] => 1
+                    [type] => image
+                    [date_history] => 2017-03-15
+                    [title] => This is a Standard post with a Preview Image
+                    [content] => Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in. Eligendi, deserunt, blanditiis est quisquam doloribus.
+                    [link_url] => blog-single.html
+                    [link_content] => /images/blog/full/17.jpg
+                )
+
+            [_oldAttributes:yii\db\BaseActiveRecord:private] => Array
+                (
+                    [id] => 1
+                    [type] => image
+                    [date_history] => 2017-03-15
+                    [title] => This is a Standard post with a Preview Image
+                    [content] => Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in. Eligendi, deserunt, blanditiis est quisquam doloribus.
+                    [link_url] => blog-single.html
+                    [link_content] => /images/blog/full/17.jpg
+                )
+
+            [_related:yii\db\BaseActiveRecord:private] => Array
+                (
+                )
+
+            [_errors:yii\base\Model:private] => 
+            [_validators:yii\base\Model:private] => 
+            [_scenario:yii\base\Model:private] => default
+            [_events:yii\base\Component:private] => Array
+                (
+                )
+
+            [_behaviors:yii\base\Component:private] => Array
+                (
+                )
+
+        )
+
+    [1] => frontend\models\UserHistory Object
+        (
+            [_attributes:yii\db\BaseActiveRecord:private] => Array
+                (
+                    [id] => 2
+                    [type] => video
+                    [date_history] => 2017-03-16
+                    [title] => This is a Standard post with an Embedded Video
+                    [content] => Asperiores, tenetur, blanditiis, quaerat odit ex exercitationem pariatur quibusdam veritatis quisquam laboriosam esse beatae hic perferendis velit deserunt!
+                    [link_url] => blog-single-full.html
+                    [link_content] => http://player.vimeo.com/video/87701971
+                )
+
+            [_oldAttributes:yii\db\BaseActiveRecord:private] => Array
+                (
+                    [id] => 2
+                    [type] => video
+                    [date_history] => 2017-03-16
+                    [title] => This is a Standard post with an Embedded Video
+                    [content] => Asperiores, tenetur, blanditiis, quaerat odit ex exercitationem pariatur quibusdam veritatis quisquam laboriosam esse beatae hic perferendis velit deserunt!
+                    [link_url] => blog-single-full.html
+                    [link_content] => http://player.vimeo.com/video/87701971
+                )
+
+            [_related:yii\db\BaseActiveRecord:private] => Array
+                (
+                )
+
+            [_errors:yii\base\Model:private] => 
+            [_validators:yii\base\Model:private] => 
+            [_scenario:yii\base\Model:private] => default
+            [_events:yii\base\Component:private] => Array
+                (
+                )
+
+            [_behaviors:yii\base\Component:private] => Array
+                (
+                )
+
+        )
+
+    [2] => frontend\models\UserHistory Object
+        (
+            [_attributes:yii\db\BaseActiveRecord:private] => Array
+                (
+                    [id] => 3
+                    [type] => video
+                    [date_history] => 2017-05-16
+                    [title] => This is a Standard post with an Embedded Video
+                    [content] => Asperiores, tenetur, blanditiis, quaerat odit ex exercitationem pariatur quibusdam veritatis quisquam laboriosam esse beatae hic perferendis velit deserunt!
+                    [link_url] => blog-single-full.html
+                    [link_content] => http://player.vimeo.com/video/87701971
+                )
+
+            [_oldAttributes:yii\db\BaseActiveRecord:private] => Array
+                (
+                    [id] => 3
+                    [type] => video
+                    [date_history] => 2017-05-16
+                    [title] => This is a Standard post with an Embedded Video
+                    [content] => Asperiores, tenetur, blanditiis, quaerat odit ex exercitationem pariatur quibusdam veritatis quisquam laboriosam esse beatae hic perferendis velit deserunt!
+                    [link_url] => blog-single-full.html
+                    [link_content] => http://player.vimeo.com/video/87701971
+                )
+
+            [_related:yii\db\BaseActiveRecord:private] => Array
+                (
+                )
+
+            [_errors:yii\base\Model:private] => 
+            [_validators:yii\base\Model:private] => 
+            [_scenario:yii\base\Model:private] => default
+            [_events:yii\base\Component:private] => Array
+                (
+                )
+
+            [_behaviors:yii\base\Component:private] => Array
+                (
+                )
+
+        )
+
+    [3] => frontend\models\UserHistory Object
+        (
+            [_attributes:yii\db\BaseActiveRecord:private] => Array
+                (
+                    [id] => 4
+                    [type] => video
+                    [date_history] => 2017-07-16
+                    [title] => This is a Standard post with an Embedded Video
+                    [content] => Asperiores, tenetur, blanditiis, quaerat odit ex exercitationem pariatur quibusdam veritatis quisquam laboriosam esse beatae hic perferendis velit deserunt!
+                    [link_url] => blog-single-full.html
+                    [link_content] => http://player.vimeo.com/video/87701971
+                )
+
+            [_oldAttributes:yii\db\BaseActiveRecord:private] => Array
+                (
+                    [id] => 4
+                    [type] => video
+                    [date_history] => 2017-07-16
+                    [title] => This is a Standard post with an Embedded Video
+                    [content] => Asperiores, tenetur, blanditiis, quaerat odit ex exercitationem pariatur quibusdam veritatis quisquam laboriosam esse beatae hic perferendis velit deserunt!
+                    [link_url] => blog-single-full.html
+                    [link_content] => http://player.vimeo.com/video/87701971
+                )
+
+            [_related:yii\db\BaseActiveRecord:private] => Array
+                (
+                )
+
+            [_errors:yii\base\Model:private] => 
+            [_validators:yii\base\Model:private] => 
+            [_scenario:yii\base\Model:private] => default
+            [_events:yii\base\Component:private] => Array
+                (
+                )
+
+            [_behaviors:yii\base\Component:private] => Array
+                (
+                )
+
+        )
+
+)

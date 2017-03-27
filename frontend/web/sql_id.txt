@@ -1,0 +1,3 @@
+SELECT id
+            FROM user
+            WHERE LOWER(fullname) LIKE BINARY LOWER('%3') ORDER BY id DESC LIMIT 1

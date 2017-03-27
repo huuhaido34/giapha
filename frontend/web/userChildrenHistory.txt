@@ -1,0 +1,21 @@
+Array
+(
+    [0] => Array
+        (
+            [history_date] => March 2017
+            [history_date2] => 2017-03
+        )
+
+    [1] => Array
+        (
+            [history_date] => May 2017
+            [history_date2] => 2017-05
+        )
+
+    [2] => Array
+        (
+            [history_date] => July 2017
+            [history_date2] => 2017-07
+        )
+
+)
