@@ -39,8 +39,8 @@ class UserHistory extends \yii\db\ActiveRecord
         return [
             [['type', 'update_date', 'user_id'], 'required'],
             [['date_history', 'create_date', 'update_date'], 'safe'],
-            [['title', 'content', 'link'], 'string'],
-            [['flag_delete', 'user_id'], 'integer'],
+            [['title', 'content', 'link_content'], 'string'],
+            [['delete_flag', 'user_id'], 'integer'],
             [['type'], 'string', 'max' => 255],
             [['image'], 'file', 'skipOnEmpty' => false, 'extensions' => 'png, jpg', 'maxFiles' => 4],
         ];
@@ -57,10 +57,11 @@ class UserHistory extends \yii\db\ActiveRecord
             'date_history' => Yii::t('frontend', 'Date History'),
             'title' => Yii::t('frontend', 'Title'),
             'content' => Yii::t('frontend', 'Content'),
-            'link' => Yii::t('frontend', 'Link'),
+            'link_content' => Yii::t('frontend', 'Link'),
+            'image' => Yii::t('frontend', 'Image'),
             'create_date' => Yii::t('frontend', 'Create Date'),
             'update_date' => Yii::t('frontend', 'Update Date'),
-            'flag_delete' => Yii::t('frontend', 'Flag Delete'),
+            'delete_flag' => Yii::t('frontend', 'Flag Delete'),
             'user_id' => Yii::t('frontend', 'User ID'),
         ];
     }

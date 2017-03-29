@@ -13,10 +13,6 @@ php_value default_charset "UTF-8"
   # Enable mod_rewrite
   RewriteEngine On
 
-  # redirect to seo
-  RewriteCond %{HTTP_HOST} ^www.your-site.ru
-  RewriteRule (.*) http://your-site.ru/$1 [R=301,L]
-
   # Xác thực với server là folder và file là có thực
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d

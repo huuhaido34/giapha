@@ -8,6 +8,9 @@ use frontend\models\UserHistorySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
+use yii\helpers\FileHelper;
+use yii\helpers\Json;
 
 /**
  * UserHistoryController implements the CRUD actions for UserHistory model.
@@ -17,6 +20,11 @@ class UserHistoryController extends Controller
     /**
      * @inheritdoc
      */
+    public function beforeAction($action) {
+        $this->enableCsrfValidation = false;
+        return parent::beforeAction($action);
+    }
+
     public function behaviors()
     {
         return [
@@ -29,13 +37,12 @@ class UserHistoryController extends Controller
         ];
     }
 
-    public function actionImageUpload()
+    public function actionUploads()
     {
-        $model = new WhateverYourModel();
-
+        $model = new UserHistory();
         $imageFile = UploadedFile::getInstance($model, 'image');
 
-        $directory = Yii::getAlias('@frontend/web/img/temp') . DIRECTORY_SEPARATOR . Yii::$app->session->id . DIRECTORY_SEPARATOR;
+        $directory = Yii::getAlias('@frontend/web/uploads') . DIRECTORY_SEPARATOR . Yii::$app->session->id . DIRECTORY_SEPARATOR;
         if (!is_dir($directory)) {
             FileHelper::createDirectory($directory);
         }
@@ -45,7 +52,7 @@ class UserHistoryController extends Controller
             $fileName = $uid . '.' . $imageFile->extension;
             $filePath = $directory . $fileName;
             if ($imageFile->saveAs($filePath)) {
-                $path = '/img/temp/' . Yii::$app->session->id . DIRECTORY_SEPARATOR . $fileName;
+                $path = Yii::$app->request->BaseUrl . '/frontend/web/uploads' . Yii::$app->session->id . DIRECTORY_SEPARATOR . $fileName;
                 return Json::encode([
                     'files' => [
                         [
@@ -66,7 +73,7 @@ class UserHistoryController extends Controller
 
     public function actionImageDelete($name)
     {
-        $directory = Yii::getAlias('@frontend/web/img/temp') . DIRECTORY_SEPARATOR . Yii::$app->session->id;
+        $directory = Yii::getAlias('@frontend/web/uploads') . DIRECTORY_SEPARATOR . Yii::$app->session->id;
         if (is_file($directory . DIRECTORY_SEPARATOR . $name)) {
             unlink($directory . DIRECTORY_SEPARATOR . $name);
         }
@@ -75,7 +82,7 @@ class UserHistoryController extends Controller
         $output = [];
         foreach ($files as $file) {
             $fileName = basename($file);
-            $path = '/img/temp/' . Yii::$app->session->id . DIRECTORY_SEPARATOR . $fileName;
+            $path = Yii::$app->request->BaseUrl . '/frontend/web/uploads' . Yii::$app->session->id . DIRECTORY_SEPARATOR . $fileName;
             $output['files'][] = [
                 'name' => $fileName,
                 'size' => filesize($file),

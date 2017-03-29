@@ -1,13 +1,26 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\BaseUrl;
 use dosamigos\fileupload\FileUploadUI;
 use dosamigos\fileupload\FileUpload;
+use limion\jqueryfileupload\JQueryFileUpload;
+
+use frontend\assets\AppAsset;
+
+AppAsset::register($this);
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\UserHistory */
 
 $this->title = Yii::t('frontend', 'Kỷ niệm thời gian');
+$js_global_variables = '
+    $.ajaxSetup({
+    data: ' . \yii\helpers\Json::encode([
+        \yii::$app->request->csrfParam => \yii::$app->request->csrfToken,
+    ]) . '
+    });' . PHP_EOL;
+$this->registerJs($js_global_variables, yii\web\View::POS_HEAD, 'js_global_variables');
 
 ?>
 <div class="content-wrap" style="padding: 80px 0">
@@ -42,23 +55,23 @@ $this->title = Yii::t('frontend', 'Kỷ niệm thời gian');
                 <?= FileUploadUI::widget([
                     'model' => $model,
                     'attribute' => 'image',
-                    'url' => ['media/upload', 'id' => $model->id],
-                    'gallery' => false,
+                    'url' => ['/user-history/uploads', 'data'=>array(
+                        \yii::$app->request->csrfParam => \yii::$app->request->csrfToken,
+                    )],
+                    'gallery' => true,
                     'fieldOptions' => [
                         'accept' => 'image/*'
                     ],
                     'clientOptions' => [
-                        'maxFileSize' => 2000000
+                        'maxFileSize' => 2000000,
+                        'dataType' => 'json',
                     ],
-                    // ...
                     'clientEvents' => [
                         'fileuploaddone' => 'function(e, data) {
                                 console.log(e);
                                 console.log(data);
                             }',
                         'fileuploadfail' => 'function(e, data) {
-                                console.log(e);
-                                console.log(data);
                             }',
                     ],
                 ]); ?>

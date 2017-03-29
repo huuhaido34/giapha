@@ -67,7 +67,6 @@ class DetailController extends Controller
             $userChildrenHistory = UserHistory::find()
                 ->select(['id, type, DATE_FORMAT(date_history,"%Y-%m") AS history_date, title, content, link_url, link_content'])
                 ->where("user_id = $member_id AND delete_flag=0")
-            //var_dump($userChildrenHistory->createCommand()->getRawSql());exit();
                 ->asArray()
                 ->all();
 
@@ -79,7 +78,6 @@ class DetailController extends Controller
                         'children'=>self::fillterArray($userChildrenHistory, 'history_date', $val['history_date2'])
                     );
                 }
-                //var_dump($arrayResult);exit();
                 if (is_numeric($member_id)){
                     $path_to = \Yii::$app->request->BaseUrl;
                     return $this->render('index', [
